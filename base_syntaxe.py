@@ -36,12 +36,19 @@ None # une valeur nulle, à utiliser au besoin, on en reparlera...
     des
     simples
 '''
+## Les séquences
+"ceci est une chaîne"  # de caractères
 
 [1,4,7,2] # une liste (crochet carré) !!!  les listes servent comme matrices, array, tableau de données
 
 [[12,43],[8,4],[22,55]] # une liste de liste, comme un tableau à 2 dimensions
 
-{}
+# les dictionnaires -> structure en paire clé:valeur  !!! EXTRÊMENT UTILE
+
+{"cle1":"une valeur",
+   "cle2":42,
+   "cle64":[],
+   101:None }
 
 ### VARIABLES
 # les variables n'ont pas à être déclarées mais doivent se faire assigner une valeur
@@ -52,8 +59,51 @@ b="" # une chaîne vide
 c=2
 d=4.2
 
+### COMMANDES ET OPÉRATEURS
 
-print("été")
+# Impression à la console
+print("valeur",12,"autre chaîne")
+
+# Arithmétique:   +, -, /, *, ** (exposant)
+
+# Transtypage
+a=15.7 # a est un réel (float)
+b= int(a) # b est un entier -> 15
+c=str(a) # c est une chaîne -> '15.7'
+d=float(c) # d est un réel -> 15.7
+e=float(b) # e est un réel -> 15.0
+
+# No ascii des caractères
+unelettre=chr(77)
+unnombre=ord("f")
+
+# Boucle
+# les boucles for fonctionne sur des séquences : dans la variable i on retrouvera la prochaine valeur de la séquence
+for i in [2,5,34,78]:
+    print(i)
+else:
+    pass # NOTE les blocs de code ne peuvent pas être vide, le mot réservé "pass" sert de jeton...
+
+# dans l'exemple suivant le while sera vrai, donc on exécute le bloc de code
+# jusqu'à ce que n==0    
+n=10
+while n>0:
+    n-=1
+
+# Condition (pour l'exemple, on le met dans la while)
+
+n=10
+while n>0:
+    n-=1
+    if n==0:
+        print("n est arrivé à zéro")
+    elif n==1:
+        print("on y est presque")
+    else:
+        print(n)
+    
+
+print("FIN")
 
 
 
