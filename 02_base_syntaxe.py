@@ -90,7 +90,7 @@ n=10
 while n>0:
     n-=1
 
-# Condition (pour l'exemple, on le met dans la while)
+# Condition (pour l'exemple, on le met dans la boucle while)
 
 n=10
 while n>0:
