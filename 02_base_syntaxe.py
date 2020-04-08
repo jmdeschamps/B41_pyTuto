@@ -23,9 +23,11 @@ None # une valeur nulle, à utiliser au besoin, on en reparlera...
 
 4.2 # un réel
 
+"f" # caractère unique
+
 "une chaîne de caractères" # une chaîne de ...
 
-'une autre chaîne de carcatères'  # guillemets simples ou doubles MAIS pas mélangés
+'une autre chaîne de caractères'  # guillemets simples ou doubles MAIS pas mélangés
 
 """ Une
     chaîne
@@ -37,7 +39,8 @@ None # une valeur nulle, à utiliser au besoin, on en reparlera...
     simples
 '''
 ## Les séquences
-"ceci est une chaîne"  # de caractères
+
+"ceci est une chaîne"  # chaînes de caractères (immuables)
 
 [1,4,7,2] # une liste (crochet carré) !!!  les listes servent comme matrices, array, tableau de données
 
@@ -50,19 +53,29 @@ None # une valeur nulle, à utiliser au besoin, on en reparlera...
    "cle64":[],
    101:None }
 
+# Tuple -> comme des listes mais immuables
+
+(12,)
+(1,4,"abc",2)
+
 ### VARIABLES
 # les variables n'ont pas à être déclarées mais doivent se faire assigner une valeur
 # chaque variable est typée, au moment de l'assignation, par son contenu
 
+zz=None
 a="une valeur" 
-b="" # une chaîne vide
-c=2
+b = "" # une chaîne vide
+c=-2
 d=4.2
+d=12
 
 ### COMMANDES ET OPÉRATEURS
 
 # Impression à la console
-print("valeur",12,"autre chaîne")
+print("valeur",12,"autre chaîne")  #, imprime n valeurs, séparées par des virgules ','
+
+# Lecture à la console
+montexte=input("Votre texte ici s.v.p.: ")  # le texte termine lorsqu'on appuie sur la touche "Enter"
 
 # Arithmétique:   +, -, /, *, ** (exposant)
 
@@ -72,6 +85,7 @@ b= int(a) # b est un entier -> 15
 c=str(a) # c est une chaîne -> '15.7'
 d=float(c) # d est un réel -> 15.7
 e=float(b) # e est un réel -> 15.0
+print("TRANSTYPAGE: ",a,b,c,d,e)
 
 # No ascii des caractères
 unelettre=chr(77)
@@ -84,11 +98,19 @@ for i in [2,5,34,78]:
 else:
     pass # NOTE les blocs de code ne peuvent pas être vide, le mot réservé "pass" sert de jeton...
 
+for i in range(10): # si on veut itérer un nombre n de fois, la fonction range va nous fournir cette séquence
+    pass
+    for j in range(10,20):
+        print(i*j,i,j)
+
 # dans l'exemple suivant le while sera vrai, donc on exécute le bloc de code
 # jusqu'à ce que n==0    
 n=10
 while n>0:
     n-=1
+    # n--  non valable en Python ni n++
+    
+##NOTE PAS DE UNTIL en Python
 
 # Condition (pour l'exemple, on le met dans la boucle while)
 
@@ -113,6 +135,10 @@ def mafonction(arg1,arg2):
 def autrefonction():
     print("Rien dans autre fonction")
     # ici Python ajoutera return None
+    
+def autrefonction2():
+    print("Rien dans autre fonction2")
+    return 1
     
 mafonction(2,7)
 autrefonction()
