@@ -102,8 +102,28 @@ while n>0:
     else:
         print(n)
     
+    
+### FONCTION
+# mot clé 'def' -> nomdefonction(liste d'arguments,0 et plus) ':'  le double point indique
+#                                                                  qu'un bloc de code suivra
+def mafonction(arg1,arg2):
+    print("mafonction dit: ",arg1,arg2)
+    return None # ce return est ajouté implicitement si aucun return n'est défini
 
-print("FIN")
+def autrefonction():
+    print("Rien dans autre fonction")
+    # ici Python ajoutera return None
+    
+mafonction(2,7)
+autrefonction()
+
+
+### CLASSE
+
+
+
+if __name__ == '__main__':
+    print("FIN")
 
 
 
