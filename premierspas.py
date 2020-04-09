@@ -13,4 +13,4 @@ def tata():
 
 if __name__ == '__main__':
     print(tata())
-    print("Terminé")
+    print("Terminé") 
