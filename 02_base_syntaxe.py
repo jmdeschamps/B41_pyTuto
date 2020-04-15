@@ -30,7 +30,7 @@ None # une valeur nulle, à utiliser au besoin, on en reparlera...
 'une autre chaîne de caractères'  # guillemets simples ou doubles MAIS pas mélangés
 
 """ Une
-    chaîne
+    'chaîne'
     multiligne
 """
 '''
@@ -44,7 +44,7 @@ None # une valeur nulle, à utiliser au besoin, on en reparlera...
 
 [1,4,7,2] # une liste (crochet carré) !!!  les listes servent comme matrices, array, tableau de données
 
-[[12,43],[8,4],[22,55]] # une liste de liste, comme un tableau à 2 dimensions
+[[12,43],[8,4],[22,55]] # une liste de liste, comme un tableau à 2 dimensions maliste[1][0]
 
 # les dictionnaires -> structure en paire clé:valeur  !!! EXTRÊMENT UTILE
 
