@@ -12,6 +12,9 @@ def affichercontenu(texte):
         repsepare=i.split(";:;")
         print("annee: ",repsepare[2])
         print("titre: ",repsepare[0])
+        # VARIANTE
+        #print("annee: ",repsepare[2][:-1])  # on slice du debut jusqu'au caracteres final moins 1
+        #print("titre: ",repsepare[0],"\n")  # on imprime une autre ligne comme separateur
 
 if __name__ == '__main__':
     contenu=liredocument()
