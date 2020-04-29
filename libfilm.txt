@@ -1,0 +1,5 @@
+nom du film;:; nom du realisateur;:;  annee de production
+batman returns\t;:; jmd;:; 1956
+autre2 titre;:;joe;:;1999
+autre3 titre;:;bill;:;2009
+autre4 titre;:;sam;:;1990
