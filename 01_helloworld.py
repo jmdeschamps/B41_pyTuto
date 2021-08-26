@@ -3,3 +3,4 @@
 import this
 
 print("Hello world")
+print("Hello world GIT")
